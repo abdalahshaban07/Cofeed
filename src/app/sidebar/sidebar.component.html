@@ -1,0 +1,82 @@
+<!-- side bar with logo and menu -->
+<!-- fab fa-cuttlefish -->
+<!-- fas fa-comment-dots -->
+<!-- fas fa-bookmark -->
+<!-- fas fa-user -->
+<!-- fas fa-cog -->
+<!-- fas fa-angle-down -->
+<!-- #A974FF -->
+<div class="sidebar">
+  <div class="logo">
+    <div class="icon">
+      <i class="fab fa-cuttlefish"></i>
+    </div>
+    <div class="logo-text">
+      <h3><span>C</span> <span class="underline">o</span><span>feed</span></h3>
+    </div>
+  </div>
+
+  <div class="menu">
+    <header>
+      <h3>Menu</h3>
+    </header>
+    <ul>
+      <li [class.active]="true">
+        <a href="home">
+          <i class="fas fa-home icon"></i>
+          <span>Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fas fa-comment-dots icon"></i>
+          <span>Message</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fas fa-user icon"></i>
+          <span>Profile</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fas fa-bookmark icon"></i>
+          <span>Save Post</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fas fa-cog icon"></i>
+          <span>Settings</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="account">
+    <div>
+      <h3>Account</h3>
+    </div>
+    <div href="#">
+      <i class="fas fa-angle-down icon"></i>
+    </div>
+  </div>
+
+  <div class="user-avatar">
+    <div class="avatar">
+      <img
+        src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200"
+        alt=""
+      />
+    </div>
+    <div class="user-info">
+      <h3 class="name">John Doe</h3>
+      <span class="email">@michaelsco_</span>
+    </div>
+  </div>
+
+  <div class="get-app">
+    <img src="../../assets/getApp.png" alt="get cofeed on app store" />
+  </div>
+</div>
