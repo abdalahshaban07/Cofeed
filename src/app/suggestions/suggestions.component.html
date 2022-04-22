@@ -1,0 +1,86 @@
+<div class="suggest">
+  <div class="header">
+    <div class="search-bar">
+      <input type="text" class="fontAwesome" placeholder="&#xF002;  Search" />
+    </div>
+    <div class="notification">
+      <div class="icon">
+        <i class="fas fa-bell"> </i>
+      </div>
+    </div>
+    <div class="cloud">
+      <i class="fas fa-cloud-arrow-up icon"> </i>
+    </div>
+  </div>
+
+  <div class="for-you">
+    <div>
+      <p style="color: #000">Suggestions For You</p>
+    </div>
+    <div>
+      <p>See All</p>
+    </div>
+  </div>
+
+  <div class="follow" *ngFor="let suggestion of suggestions">
+    <div class="user-avatar">
+      <div class="avatar">
+        <img [src]="suggestion.avatar" [alt]="suggestion.name" />
+      </div>
+      <div class="user-info">
+        <h3 class="name">{{ suggestion.name }}</h3>
+        <span class="email">{{ suggestion.email }}</span>
+      </div>
+    </div>
+    <div class="btn-follow">
+      <button
+        class="btn"
+        [ngStyle]="{ background: suggestion.followed && 'silver' }"
+      >
+        {{ suggestion.followed ? "Followed" : "Follow" }}
+      </button>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="latest-activity">
+    <span> Latest Post Activity </span>
+  </div>
+
+  <div class="post">
+    <div class="details">
+      <div class="post-img">
+        <img src="https://picsum.photos/200?random=23" alt="title" />
+      </div>
+      <div class="post-info">
+        <div class="post-title">Minimalist Stairs</div>
+        <div class="post-action">
+          <div>
+            <i class="fas fa-heart icon" style="color: red"> </i>
+            <span>12</span>
+          </div>
+          <div>
+            <i class="fas fa-comment icon"> </i>
+            <span>12</span>
+          </div>
+          <div>
+            <i class="fas fa-bookmark icon"> </i>
+            <span>8</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="all-posts">
+      <span> See All Posts </span>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div>About</div>
+    <div>Help</div>
+    <div>Terms</div>
+    <div>Popular</div>
+    <div>Language</div>
+  </footer>
+</div>

@@ -40,11 +40,6 @@ export class HomeComponent implements OnInit, OnDestroy {
       url: 'https://i.pravatar.cc/200?img=5',
       border: '2px solid blueviolet',
     },
-    {
-      name: 'Enola',
-      url: 'https://i.pravatar.cc/200?img=6',
-      border: '2px solid blueviolet',
-    },
   ];
 
   types = [
