@@ -6,13 +6,21 @@ import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HomeComponent } from './home/home.component';
 import { SuggestionsComponent } from './suggestions/suggestions.component';
+import { MessageComponent } from './message/message.component';
+import { ProfileComponent } from './profile/profile.component';
+import { SavedpostComponent } from './savedpost/savedpost.component';
+import { SettingsComponent } from './settings/settings.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     HomeComponent,
-    SuggestionsComponent
+    SuggestionsComponent,
+    MessageComponent,
+    ProfileComponent,
+    SavedpostComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,

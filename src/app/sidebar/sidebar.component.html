@@ -13,32 +13,32 @@
       <h3>Menu</h3>
     </header>
     <ul>
-      <li [class.active]="true">
-        <a href="#">
+      <li [routerLink]="['/home']" routerLinkActive="active">
+        <a>
           <i class="fas fa-home icon"></i>
           <span>Home</span>
         </a>
       </li>
-      <li>
-        <a href="#">
+      <li [routerLink]="['/message']" routerLinkActive="active">
+        <a>
           <i class="fas fa-comment-dots icon"></i>
           <span>Message</span>
         </a>
       </li>
-      <li>
-        <a href="#">
+      <li [routerLink]="['/profile']" routerLinkActive="active">
+        <a>
           <i class="fas fa-user icon"></i>
           <span>Profile</span>
         </a>
       </li>
-      <li>
-        <a href="#">
+      <li [routerLink]="['/saved-posts']" routerLinkActive="active">
+        <a>
           <i class="fas fa-bookmark icon"></i>
-          <span>Save Post</span>
+          <span>Saved Post</span>
         </a>
       </li>
-      <li>
-        <a href="#">
+      <li [routerLink]="['/settings']" routerLinkActive="active">
+        <a>
           <i class="fas fa-cog icon"></i>
           <span>Settings</span>
         </a>
