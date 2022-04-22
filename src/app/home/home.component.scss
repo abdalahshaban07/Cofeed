@@ -1,0 +1,145 @@
+.home {
+  padding: 20px;
+  .avatars {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
+
+.overlay {
+  position: absolute;
+  left: 12%;
+  top: 6%;
+  font-size: 25px;
+  background-color: blueviolet;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 77px;
+  height: 76px;
+  border-radius: 50%;
+  a {
+    color: #fff;
+  }
+}
+
+.avatar {
+  width: 100px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  .avatart-border {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+
+    img {
+      width: 90%;
+      height: 90%;
+      border-radius: 50%;
+    }
+  }
+  .name {
+    font-size: 14px;
+    color: #25396f;
+    font-weight: bold;
+  }
+}
+
+.feeds {
+  display: flex;
+  flex-direction: column;
+
+  .feed-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .header {
+      width: 10%;
+      color: #25396f;
+    }
+    .type {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 40%;
+      color: gray;
+      cursor: pointer;
+      & .active {
+        color: blueviolet;
+      }
+    }
+  }
+}
+
+.feed-content {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  .item {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 10px;
+    .feed-img {
+      width: 100%;
+      height: 270px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+    }
+
+    .feed-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .feed-avatar {
+        width: 100%;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        color: #25396f;
+        img {
+          height: 100%;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+      }
+      .actions {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        .action {
+          margin-left: 15px;
+          cursor: pointer;
+          color: gray;
+          .icon {
+            margin-right: 10px;
+          }
+
+          &:hover {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}
